@@ -1,0 +1,13 @@
+
+*{
+    box-sizing: border-box;
+    font-family:'segou ui', 'calibri', sans-serif;
+
+}
+body,
+h1,
+h2,
+h3{
+    margin:0;
+  
+  }
