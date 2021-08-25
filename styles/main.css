@@ -7,7 +7,40 @@
 body,
 h1,
 h2,
-h3{
+h3,
+.menu{
     margin:0;
   
+  }
+  nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      background: linear-gradient(#d3c, #48c);
+  }
+  nav a{
+      display: block;
+      color: #eee;
+      text-decoration: none;
+      padding: .5rem;
+  }
+  .logo{
+      font-weight: bold;
+      text-transform: uppercase;
+  }
+  .btn{
+      border: .1rem solid #eee;
+      margin: .5rem;
+      border: .1rem solid #eee;
+      color: #eee;
+      background-color: transparent;
+  }
+  .menu{
+      width: 100%;
+      padding: 0%;
+      list-style: none;
+  }
+  .menu a:hover{
+      background-color: #3338;
   }
