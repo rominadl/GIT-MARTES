@@ -71,6 +71,19 @@
                 Apuntador movil que permite al usuario desplazarse dentro del historial de cambios, ya que siempre indica la posicion actual del mismo. Tambien sirve como referente a la hora de indicar a que confirmacion estamos haciendo referencia al utilizar los comandos de git, como "HEAD^" para indicar que es un commit ancestro o "HEAD-2" para indicar que nos referimos al commit que se encuentra 2 confirmaciones atras.
             </P>
        </article>
+       <article>
+           <h3>BRANCH</h3>
+           <P>
+               Apuntador dinamico que siempre se corresponde con el ultimo commit de una historia, siempre nos permiten volver cuando navegamos en el historial de cambios hacia un punto anterior y generalmente comparten un ancestro en comun.Se utilizan para implementar caracteristicas o corregir errores sin afectar la linea principal. 
+           </P>
+           <ul class="commands"></ul>
+           <li><strong>git branch &lt;name></strong>crea una rama en la posicion actual del historial</li>
+           <li><strong>git branch -d &lt;branch></strong>elimina de una forma segura una rama, siempre que los cambios hayan sido integrados</li>
+           <li><strong>git branch -D&lt;branch></strong>elimina de manera forzada la rama, aunque los cambios no hayan sido agregados</li>
+           <li><strong>git push -u &lt;remote> &lt;branch></strong>agregamos una rama local a nuestro repositorio remoto</li>
+           <li><strong>git push -d &lt;remote> &lt;branch</strong>elimina del repositorio la rama seleccionada</li>
+           <li><strong>git merge &lt;branch></strong>integra en la rama actual los cambios de la rama seleccionada</li>
+       </article>
     </section>
     
 </body>
